@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='main-style.css'>
+        <!-- minify -->
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <!-- latest -->
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <!-- core style only -->
+        <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav-login">
+            <a href="#" class="nes-badge is-splited">
+                <span class="is-dark">To</span>
+                <span class="is-success">Do</span>
+            </a>
+            <span class="nes-text is-disabled">by NES.css</span>
+            <button type="button" class="nes-btn is-success info">Info</button>
+            <button type="button" class="nes-btn is-primary login">Log In</button>
+        </nav>
+        <section class="text-task">
+            <div class="text-div">
+                <label for="textarea_field">Your task:</label>
+                <textarea id="textarea_field" class="nes-textarea"></textarea>
+            </div>
+            <button type="button" class="nes-btn add">Add Task</button>
+        </section>
+        <div class="contenedor">
+            <div class="nes-container with-title is-centered tasks-section">
+                <div class="nes-container with-title is-dark priors task-box">
+                    <p class="title">Priorities:</p>
+                </div>
+                <div class="nes-container with-title is-dark notU task-box">
+                    <p class="title">Not so urgent:</p>
+                </div>
+                <div class="nes-container with-title is-dark done task-box">
+                    <p class="title">Done!</p>
+                </div>
+            </div>
+        </div>
+        <script src='main.js'></script>
+    </body>
+</html>

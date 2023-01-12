@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+
+    /* background: url(clouds.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+
+    /* these configs are to add an gaming retro image to the background */
+}
+
+.nav-login {
+    background-color: #000000;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0px 5px 0px #000;
+
+    height: 10%;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.info {
+    grid-column: 4;
+}
+
+.login {
+    grid-column: 5;
+}
+
+.text-task {
+    height: 20%;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 3fr 1fr 0.7fr;
+}
+
+textarea {
+    resize: none!important;
+}
+
+.contenedor {
+    height: 70%;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+}
+
+.tasks-section {
+    width: 90%;
+
+    display: grid;
+    border: none!important;
+    gap: 30px;
+}
+
+/* one task section */
+
+.task {
+    color: #3785dd;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2fr 1fr;
+
+    margin: 10px;
+
+    /* border-left: 2PX solid #fff; */
+}
+
+/* p element from the task section */
+
+.task-content{
+    background-color: #25282c;
+
+    height: 100%;
+    width: 97%;
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+
+    margin: 0;
+
+    overflow: auto;
+    /* border: 1px solid #000; */
+}
+
+/* btnKit from the task section */
+
+.btnKit {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+.btnKitDone {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(#fff, #fff, #fff, 0.3);
+    backdrop-filter: blur(7px);
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.modal-content {
+    height: 300px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+::-webkit-scrollbar {
+    background-color: #000;
+    
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #212529;
+}
